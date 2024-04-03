@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --web-kit-font-smoothing: antialiased;
+    --moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --orange: #F48F56;
+    --dark-green: #00292E;
+    --light-green: #9FF9CC;
+    --gray-200: #C4C4CC;
+    --gray-900: #121214;
+
+    --border: 1px solid #ffffff1a;
+}
+
+body {
+    background-color: var(--gray-900);
+    color: white;
+} 
+
+.container {
+    max-width: 69rem;
+    margin: 0 auto;
+    padding: 2rem 3.2rem;
+}
+
+html, body, input {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+header {
+    padding: 2rem 0;
+}
+
+form {
+    border: var(--border);
+    border-inline: none;
+
+    padding: 2rem 0;
+}
+
+form fieldset {
+    border: none;
+}
+
+form fieldset > div {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.input-wrapper {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    border: var(--border);
+    border-radius: 1rem;
+
+    padding: 0.8rem 1.2rem;
+
+    font: 400 1.4rem/150% 'Roboto', sans-serif;
+    color: var(--gray-200);
+}
+
+input {
+    all: unset;
+}
+
+fieldset legend, section h2 {
+    color: var(--gray-200);
+
+    font: 700 1.6rem/140% 'Roboto', sans-serif;
+
+    padding-bottom: 1.6rem;
+}
+
+fieldset button {
+    background-color: var(--orange);
+    color: #00292e;
+
+    font: 700 1.2rem/ 2.4rem 'Roboto', sans-serif;
+    text-transform: uppercase;
+
+    width: fit-content;
+    
+    border: none;
+    border-radius: 1rem;
+
+    padding: 0.7rem 2rem;
+}
+
+fieldset button:hover {
+    background-color: #f5752c;
+
+    cursor: pointer;
+}
+
+.lista-participantes {
+    padding: 2rem 0;
+}
+
+.lista-participantes > div {
+    border: var(--border);
+    border-radius: 0.8rem;
+}
+
+table {
+    border-collapse: collapse;
+
+    width: 100%;
+}
+
+table thead {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+
+    text-align: left;
+}
+
+thead th,
+tbody td {
+    padding: 1.2rem 1.6rem;
+}
+
+tbody td {
+    color: var(--gray-200);
+
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+
+    border-top: var(--border);
+}
+
+tbody td strong {
+    color: white;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+}
+
+tbody td small {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+tbody td button {
+    all: unset;
+
+    color: var(--light-green);
+}
+
+tbody td button:hover {
+    text-decoration: underline;
+    
+    cursor: pointer;
+}

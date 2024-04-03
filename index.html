@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./assets/Frame 7108.svg" alt="logo">
+        </header>
+        <form onsubmit="adicionarParticipante(event)">
+            <fieldset>
+                <legend>Inscrição</legend>
+    
+                <div>
+                    <div class="input-wrapper">
+                        <img src="./assets/circle-user-round.svg" alt="">
+                        <input type="text" name="name-input" placeholder="Nome Completo" required>
+                    </div>
+    
+                    <div class="input-wrapper">
+                        <img src="./assets/at-sign.svg" alt="">
+                        <input type="email" name="email-input" id="email-input" placeholder="E-mail" required>
+                    </div>
+    
+                    <button>realizar inscrição</button>
+                </div>
+            </fieldset>
+        </form>
+
+        <section class="lista-participantes">
+            <h2>Participantes</h2>
+            
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Participante</th>
+                            <th>Data da Inscrição</th>
+                            <th>Data do Check-In</th>
+                        </tr>
+                    </thead>
+            
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script>
+    <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
+    <script>
+      dayjs.locale('pt-br')
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
